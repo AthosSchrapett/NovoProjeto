@@ -1,0 +1,55 @@
+.container-fluid{
+    background-color: #000000;
+    height: 100px;
+    max-width: 1000px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container-fluid p{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dados{
+    margin-top: 30px;
+}
+
+.dados .form-control{
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.dados input#inputlong{
+    max-width: 960px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.dados .row{
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+.checkbox{
+    margin-top: 25px;
+}
+
+.checkbox input{
+    margin-left: 20px;
+}
+
+.dados button{
+    width: 593px;
+    height: 60px;
+    border-radius: 40px;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 20px;
+}

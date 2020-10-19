@@ -1,0 +1,156 @@
+<div class="container-fluid">
+    <p>
+      DADOS DO SOLICITANTE
+    </p>
+</div>
+
+<div class="dados">
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Nome</p>
+          <input type="text" id="nome" class="form-control" (input)="this.nome = $event.target.value" placeholder="Nome">
+        </div>
+        <div class="col">
+          <p>ID Funcional</p>
+          <input type="number" id="number"class="form-control" (input)="this.idFuncional = $event.target.value" placeholder="ID Funcional">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Telefone</p>
+          <input type="tel" id="tel" class="form-control" (input)="this.telefone = $event.target.value" placeholder="Telefone">
+        </div>
+        <div class="col">
+          <p>E-mail</p>
+          <input type="text" id="email" class="form-control" (input)="this.email = $event.target.value" placeholder="Insira seu e-mail aqui">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row" id>
+        <div class="col">
+          <p>Órgão</p>
+          <input type="text" id="orgao" class="form-control" id="inputlong" (input)="this.orgao = $event.target.value" placeholder="Digite seu órgão aqui">
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <div class="container-fluid">
+      <p>
+        DESCRIÇÃO DO EVENTO
+      </p>
+  </div>
+  
+  <div class="dados">
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Evento</p>
+          <input type="text" id="sobreEvento" class="form-control" id="inputlong" (input)="this.evento = $event.target.value" placeholder="Diga mais sobre seu evento">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Data do Evento</p>
+          <input type="date" id="dataEvento" class="form-control" (input)="this.dataEvento = $event.target.value" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="col">
+          <p>Horario do Evento</p>
+          <input type="time" id="horaEvento" class="form-control" (input)="this.horaEvento = $event.target.value" placeholder="--:--">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Periodo de duração em horas</p>
+          <input type="time" id="duracaoEvento" class="form-control" (input)="this.duracaoEvento = $event.target.value" placeholder="--:--">
+        </div>
+        <div class="col">
+          <p>Público-Alvo</p>
+          <input type="text" id="publicoAlvo" class="form-control" (input)="this.publicoAlvo = $event.target.value" placeholder="Interno">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Pauta</p>
+          <input type="text" id="pauta" class="form-control" id="inputlong" (input)="this.pauta = $event.target.value" placeholder="Detalhe o seu evento">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Número de Participantes</p>
+          <input type="number" id="numParticipantes" class="form-control" (input)="this.numParticipantes = $event.target.value" placeholder="0">
+        </div>
+        <div class="col">
+          <p>Público-Alvo</p>
+          <input type="text" id="publicoAlvo" class="form-control" (input)="this.publicoAlvo = $event.target.value" placeholder="Sim">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Haverá necessidade de vagas de estacionamento?</p>
+          <input type="number" id="vagasEstacionamento" class="form-control" (input)="this.vagasEstacionamento = $event.target.value" placeholder="Vagas">
+        </div>
+        <div class="col">
+          <p>Responsável</p>
+          <input type="text" id="responsavel" class="form-control" (input)="this.responsavel = $event.target.value" placeholder="Quem será o responsável?">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p>Quais Recursos audiovisuais serão necessários</p>
+            <div class="checkbox">
+              <label>DATASHOW<input id="datashow" type="checkbox" (input)="this.datashow = $event.target.value" value=""></label>
+            </div>
+            <div class="checkbox">
+              <label>LAPTOP<input id="laptop" type="checkbox" (input)="this.laptop = $event.target.value" value=""></label>
+            </div>
+            <div class="checkbox">
+              <label>VIDEO CONFERÊNCIA<input id="videoConferencia" type="checkbox" (input)="this.videoConferencia = $event.target.value" value=""></label>
+            </div>
+            <div class="checkbox">
+              <label>LOUÇA INTERATIVA<input id="loucaInterativa" type="checkbox" (input)="this.loucaInterativa = $event.target.value" value=""></label>
+            </div>
+        </div>
+          <div class="col">
+            <p>Função/Cargo:</p>
+            <input type="text" id="funcaoCargo" class="form-control" (input)="this.funcaoCargo = $event.target.value" placeholder="Função">
+            <p>Telefone</p>
+            <input type="text" id="telEvento" class="form-control" (input)="this.telefoneEvento = $event.target.value" placeholder="Telefone">
+            <p>E-mail</p>
+            <input type="text" id="emailEvento" class="form-control" (input)="this.emailEvento = $event.target.value" placeholder="Insira seu e-mail">
+          </div>
+      </div>
+    </form>
+  </div>
+  
+  
+  <div class="container-fluid">
+      <p>
+        OBSERVAÇÕES (CASO JULGUE NECESSÁRIO)
+      </p>
+  </div>
+  
+  <div class="dados">
+    <form>
+      <div class="row">
+        <input type="text" id="obs" class="form-control" (input)="this.obs = $event.target.value" id="inputlong" placeholder="Digite aqui sua observação">
+        <button type="button" class="btn btn-outline-dark" onclick="enviarDados()">Finalizar Reserva</button>
+      </div>
+    </form>
+  </div>
